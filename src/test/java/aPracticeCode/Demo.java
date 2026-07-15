@@ -37,7 +37,7 @@ public class Demo {
 		System.out.println(ErrorMessegeBox);
 
 		
-		Thread.sleep(100000);
+		Thread.sleep(90000);
 		driver.quit();
 			
 	}	
