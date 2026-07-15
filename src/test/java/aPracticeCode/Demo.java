@@ -33,8 +33,8 @@ public class Demo {
 			driver.findElement(By.xpath("//input[@id='password']")).sendKeys("122");
 			driver.findElement(By.xpath("//input[@id='login-button']")).click();
 			
-		String web= driver.findElement(By.xpath("//h3[text()='Epic sadface: Username and password do not match any user in this service']")).getText();
-		System.out.println(web);
+		String ErrorMessegeBox= driver.findElement(By.xpath("//h3[text()='Epic sadface: Username and password do not match any user in this service']")).getText();
+		System.out.println(ErrorMessegeBox);
 
 			
 	}	
