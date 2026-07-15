@@ -7,7 +7,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 
 public class Demo {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException {
 		// TODO Auto-generated method stub
 		
 		
@@ -36,6 +36,9 @@ public class Demo {
 		String ErrorMessegeBox= driver.findElement(By.xpath("//h3[text()='Epic sadface: Username and password do not match any user in this service']")).getText();
 		System.out.println(ErrorMessegeBox);
 
+		
+		Thread.sleep(100000);
+		driver.quit();
 			
 	}	
 		
